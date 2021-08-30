@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #eecfba, #c5dde8);
+}
+
+ul li {
+  list-style: none;
+}
+
+.border {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvas {
+  border: 1px solid;
+}
+
+.heart {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  transform: rotate(45deg);
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -40px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: -40px;
+}
+
+.hearts-container-left {
+  margin-right: 43px;
+}
+
+.heart.tool:after {
+  visibility: hidden;
+}

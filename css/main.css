@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.play {
+  background-color: #ff5964;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.instruction {
+  background-color: #38618c;
+  width: 60vw;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.players-container {
+  display: flex;
+}
+
+.heading-instruction-player {
+  margin-bottom: 30px;
+}
+
+.instruction-player1 {
+  margin-right: 75px;
+}
+
+.instruction-player2 {
+  margin-left: 75px;
+  padding-left: 20px;
+}
+
+.btn {
+  display: block;
+  height: 75px;
+  width: 150px;
+  border: 1px solid #fff;
+  min-height: 50px;
+  min-width: 100px;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 40px;
+  font-size: 25px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
